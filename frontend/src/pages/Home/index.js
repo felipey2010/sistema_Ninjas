@@ -13,6 +13,24 @@ const useStyles = makeStyles((theme) => ({
     height: "60px",
     width: "100%",
   },
+  title: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  Container: {
+    // display: "block",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    // maxWidth: "800px",
+    textAlign: "center",
+    margin: "60px auto",
+    padding: "10px 20px",
+    background: "#fdfdfd",
+    borderRadius: "4px",
+    boxShadow: "1px 2px 3px rgba(0,0,0,0.2)",
+  },
   formulario: {
     display: "flex",
     justifyContent: "flex-start",
@@ -22,8 +40,9 @@ const useStyles = makeStyles((theme) => ({
     margin: "30px auto",
   },
   textField: {
-    width: "100%",
-    marginBottom: "10px",
+    width: "70%",
+    marginBottom: "15px",
+    textAlign: "center",
   },
   button: {
     display: "flex",
@@ -75,8 +94,8 @@ export default function Home() {
   // }
 
   return (
-    <div id="ninja-container">
-      <h1>Contrate um ninja na sua área</h1>
+    <div className={classes.container}>
+      <h1 className={classes.title}>Contrate um ninja na sua área</h1>
       <div className={classes.formulario}>
         <TextField className={classes.textField} label="Latitude" name="lat" />
         <TextField className={classes.textField} label="Longitude" name="lng" />
