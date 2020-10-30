@@ -27,7 +27,7 @@ export default function BasicTable({ GetNinjas, ninjas }) {
             <TableCell>Nome</TableCell>
             <TableCell align="right">Rank</TableCell>
             <TableCell align="right">Available</TableCell>
-            <TableCell align="right">Acoes</TableCell>
+            <TableCell align="right">A&ccedil;&otilde;es</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -38,7 +38,7 @@ export default function BasicTable({ GetNinjas, ninjas }) {
               </TableCell>
               <TableCell align="right">{item.rank}</TableCell>
               <TableCell align="right">
-                {item.available ? "Disponivel" : "Indisponivel"}
+                {item.available ? "Disponível" : "Indisponível"}
               </TableCell>
               <TableCell align="right">
                 <Actions GetNinjas={GetNinjas} ninja={item} />

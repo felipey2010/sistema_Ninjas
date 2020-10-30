@@ -134,7 +134,6 @@ export default function PersistentDrawerLeft({ GetNinjas, ninja }) {
   }
 
   async function Editar() {
-    console.log("Chegando aqui");
     const params = {
       name: values.name,
       rank: values.rank,

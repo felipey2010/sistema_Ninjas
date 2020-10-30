@@ -97,8 +97,18 @@ export default function Home() {
     <div className={classes.container}>
       <h1 className={classes.title}>Contrate um ninja na sua área</h1>
       <div className={classes.formulario}>
-        <TextField className={classes.textField} label="Latitude" name="lat" />
-        <TextField className={classes.textField} label="Longitude" name="lng" />
+        <TextField
+          required
+          className={classes.textField}
+          label="Latitude"
+          name="lat"
+        />
+        <TextField
+          required
+          className={classes.textField}
+          label="Longitude"
+          name="lng"
+        />
         <Button className={classes.button} variant="contained" color="primary">
           Procurar Ninjas
         </Button>
